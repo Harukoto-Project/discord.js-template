@@ -1,0 +1,9 @@
+core:
+  events:
+    interaction_command:
+      error:
+        command_not_found: コマンドが存在しません
+        command_not_supported: コマンドがスラッシュコマンドに対応していません
+        admin_only: このコマンドはBot関係者のみ実行可能です
+        dev_mode: 開発モードが有効です\n許容されたユーザーのみコマンドを実行することができます
+        missing_permissions: このコマンドを使用する権限が不足しています

@@ -1,0 +1,12 @@
+# dependencies
+/node_modules
+/dist
+
+# development files
+/.dev
+/logs
+
+# environment variables
+.env
+.env.development
+.env.production

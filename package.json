@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "discord.js-template",
+  "version": "1.0.0",
+  "description": "A template for a discord.js bot using TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build:tsc": "tsc -p tsconfig.json",
+    "build:aliases": "tsc-alias -p tsconfig.json",
+    "dev": "cross-env NODE_ENV=development pnpm run start",
+    "format": "prettier --write .",
+    "check": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.15.0",
+      "onFail": "download"
+    }
+  },
+  "packageManager": "pnpm@12.15.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/i18n": "^0.13.12",
+    "@types/node": "^26.6.5",
+    "cross-env": "^10.1.0",
+    "prettier": "^3.9.10",
+    "tsc-alias": "^1.9.9",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@logtape/file": "^2.4.2",
+    "@logtape/logtape": "^2.4.2",
+    "dayjs": "^1.11.23",
+    "discord.js": "^14.27.0",
+    "dotenv": "^18.0.9",
+    "glob": "^13.0.6",
+    "i18n": "^0.15.4"
+  }
+}
