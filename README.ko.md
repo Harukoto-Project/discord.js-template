@@ -179,14 +179,6 @@ export default new CommandHandler({
 
 테스트 스크립트는 `package.json`에 없습니다. 제출 전 확인은 [CONTRIBUTING.md](CONTRIBUTING.md)에 있습니다.
 
-## 알려진 제한
-
-- 번역 파일을 `dist/lib/locales`로 복사하는 스크립트는 없습니다.
-- 권한 부족 번역 키는 코드가 `core.events.interaction_command.error.permission_missing`이고, `locales/ja_jp.yml`은 `missing_permissions`입니다.
-- `GuildMembers` intent는 요청하지 않습니다. 멤버가 캐시에 없으면 권한 확인은 응답 없이 끝납니다.
-- `CommandOptions`에는 `aliases`, `canUseUserCommand`, `execute.message`가 있습니다. 이를 사용하는 처리는 `src`에 없습니다.
-- `interactionCommand.ts`는 명령 실행 중 예외를 잡지 않습니다.
-
 ## 기여
 
 Issue와 Pull Request를 받습니다. 절차는 [CONTRIBUTING.md](CONTRIBUTING.md)를 보세요.

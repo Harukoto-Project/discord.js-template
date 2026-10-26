@@ -63,7 +63,7 @@ export default new EventHandler(
 
         if (!member.permissions.has(command.requiredPermissions || [])) {
           return await interaction.followUp(
-            errorEmbed($(`${I18N_PATH}.permission_missing`)),
+            errorEmbed($(`${I18N_PATH}.missing_permissions`)),
           );
         }
       }

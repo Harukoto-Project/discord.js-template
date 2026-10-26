@@ -179,14 +179,6 @@ Add a `.ts` file under `src/app/events` and default-export an `EventHandler`. Th
 
 `package.json` has no test script. Checks to run before a contribution are listed in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-## Known limitations
-
-- There is no script that copies translation files to `dist/lib/locales`.
-- The missing-permission translation key is `core.events.interaction_command.error.permission_missing` in code and `missing_permissions` in `locales/ja_jp.yml`.
-- The `GuildMembers` intent is not requested. When the member is not cached, the permission check returns without a response.
-- `CommandOptions` includes `aliases`, `canUseUserCommand`, and `execute.message`. No code under `src` uses them.
-- `interactionCommand.ts` does not catch exceptions thrown while a command runs.
-
 ## Contributing
 
 Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).

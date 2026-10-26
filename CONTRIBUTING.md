@@ -4,17 +4,16 @@ IssueとPull Requestを歓迎します。
 
 ## 開発環境
 
-- OS: TODO: 要確認（マニフェスト、Dockerfile、CIにOSの指定はありません）
-- 言語: TypeScript（依存関係`typescript` ^7.0.2）
-- パッケージマネージャー: pnpm 12.15.0（`package.json`の`packageManager`）
-- Node.js: TODO: 要確認（`package.json`に`engines`はありません。依存関係のdiscord.js 14.27.0はNode.js 18以上を要求します）
+- OS: Windows / macOS / Linux
+- 言語: TypeScript
+- パッケージマネージャー: pnpm
+- Node.js: v24
 
 ## 提出前の確認
 
 - `pnpm check` — Prettierの差分がないかを確認します。
 - `pnpm run build:tsc` — TypeScriptをコンパイルします。型エラーもここで分かります。
 - `pnpm run build:aliases` — `tsconfig.json`のパスエイリアスを、コンパイル後のJavaScriptへ反映します。
-- テスト: TODO: 要確認（`package.json`にテスト用スクリプトはありません）
 
 ## バグ報告
 

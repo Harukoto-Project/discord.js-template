@@ -179,14 +179,6 @@ export default new CommandHandler({
 
 テスト用スクリプトは`package.json`にありません。提出前の確認は[CONTRIBUTING.md](CONTRIBUTING.md)に書いてあります。
 
-## 既知の制限
-
-- 翻訳ファイルを`dist/lib/locales`へコピーするスクリプトはありません。
-- 権限不足の翻訳キーは、コードが`core.events.interaction_command.error.permission_missing`、`locales/ja_jp.yml`が`missing_permissions`です。
-- `GuildMembers` intentは要求していません。メンバーがキャッシュに無いとき、権限チェックは応答を返さずに終わります。
-- `CommandOptions`には`aliases`、`canUseUserCommand`、`execute.message`があります。これらを使う処理は`src`にありません。
-- `interactionCommand.ts`は、コマンド実行中の例外を捕まえていません。
-
 ## 貢献
 
 IssueとPull Requestを受け付けています。手順は[CONTRIBUTING.md](CONTRIBUTING.md)を参照してください。
